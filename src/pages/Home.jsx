@@ -1,22 +1,27 @@
-import companies from "../data/companies";
+import Layout from "../components/Layout";
 import CompanyCard from "../components/CompanyCard";
-import DashboardHeader from "../components/DashboardHeader";
+import companies from "../data/companies";
 
 export default function Home() {
-  return (
-    <div className="dashboard-container">
 
-      <DashboardHeader />
+  return (
+
+    <Layout>
 
       <div className="company-grid">
-        {companies.map((company) => (
+
+        {companies.map(company => (
+
           <CompanyCard
             key={company.id}
             company={company}
           />
+
         ))}
+
       </div>
 
-    </div>
+    </Layout>
+
   );
 }
