@@ -1,13 +1,13 @@
 export default function DashboardHeader() {
   return (
-    <>
-      <h1 className="dashboard-title">
-        SOP Compliance Audit Dashboard
-      </h1>
+    <div className="page-header">
 
-      <p className="dashboard-subtitle">
-        Select a Company and continue to view the dashboard.
+      <h1>SOP Compliance Audit Dashboard</h1>
+
+      <p>
+        Select a company to continue to its compliance dashboard.
       </p>
-    </>
+
+    </div>
   );
 }
